@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CarrosApp</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div id="sideNavigation" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#info">Sobre Carros</a>
+		<a href="#mejores">Mejores Carros</a>
+	</div>
+
+	<nav class="topnav">
+		<a href="#" onclick="openNav()">
+			<svg width="30" height="30" id="icoOpen">
+				<path d="M0,5 30,5" stroke="#fff" stroke-width="7" />
+				<path d="M0,14 30,14" stroke="#fff" stroke-width="7" />
+				<path d="M0,23 30,23" stroke="#fff" stroke-width="7" />
+			</svg>
+		</a>
+		<div>
+			<span class="logo">CarroApp</span>
+		</div>
+		
+	</nav>
+
+	<div id="main">
+		<section id="info">
+			<div class="pbuttom">
+				<h1 class="text">Sobre los carros</h1>
+				<p class="text-j">Los carros son la mejor alternativa para el transporte humano, ya que nos permite estar de un lugar a otro de una forma sencilla y rapida.</p>
+			</div>
+			<div class="container">
+				<img class="img-responsive" src="carromain.jpg" style="width:100%">
+			</div>
+
+		</section>
+
+		<section id="mejores" class="">
+			<div class="container">
+				<h1 class="text">Los mejores carros del año presente</h1>
+				<p>En estos ultimos años los carros que mas han representado </p>
+			</div>
+
+			<div class="container">
+				<div class="card">
+					<img src="Chevrolet Onix.jpg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>1. Chevrolet Onix</b></h4>
+						<p>Uno de los mejores carros que se ha mostrado en el año 2022</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="card">
+					<img src="Suzuki Swift.jpg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>2. Suzuki Swift</b></h4>
+						<p>Uno de los mejores carros que se ha mostrado en el año 2022</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="card">
+					<img src="Renault Duster.jpg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>3. Renault Duster</b></h4>
+						<p>Uno de los mejores carros que se ha mostrado en el año 2022</p>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+	</div>
+	<script>
+		function openNav() {
+			document.getElementById("sideNavigation").style.width = "230px";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+
+		function closeNav() {
+			document.getElementById("sideNavigation").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+	</script>
+</body>
+
+</html>
